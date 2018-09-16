@@ -19,16 +19,16 @@ while(1):
     word_guess=""
     lives=3
     first_guess = True
-    r1 = requests.get('http://upe.42069.fun/Ci4zv')
+    r1 = requests.get('')
     index=0
     print(r1.status_code)
     j = r1.json()
     dead = False
   else:
     counter+=1
-    '''json_string = '{"email": "sbauersfeld@g.ucla.edu"}'
+    '''json_string = '{"email": ""}'
     msg = json.loads(json_string)
-    r = requests.post('http://upe.42069.fun/Ci4zv/reset', msg)
+    r = requests.post('', msg)
     print(r.json())'''
     while (letters[index] in guesses):
       index+=1
